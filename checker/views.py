@@ -1,11 +1,15 @@
+from os import environ
+
 from django.http import JsonResponse, HttpRequest
 from django.core.exceptions import ObjectDoesNotExist
 from requests import post
+from dotenv import load_dotenv
 
 from .models import License
 
+load_dotenv()
 
-base_url = f"https://api.telegram.org/bot6295880776:AAFuTGL9lTKaHjO3NapkWwWllTwSxvENPCo"
+base_url = f"https://api.telegram.org/bot{environ.get('TELEGRAM_TOKEN')}"
 
 
 def check_license(request: HttpRequest):
