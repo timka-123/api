@@ -28,7 +28,8 @@ load_dotenv()
 SECRET_KEY = environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+CSRF_TRUSTED_ORIGINS = ['https://*']
 
 ALLOWED_HOSTS = ['*']
 
