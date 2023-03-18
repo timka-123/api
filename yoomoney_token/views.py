@@ -11,7 +11,7 @@ load_dotenv()
 
 
 def create_temp_token(request: HttpRequest):
-    return redirect(f"https://yoomoney.ru/oauth/authorize?client_id={environ.get('YOOMONEY_CLIENT_ID')}&response_type=code&redirect_uri=https://core.timka.space/yoomoney/callback/&scope=payment+account-info+operation-history+operation-details+payment-shop+payment-p2p+money-source")
+    return redirect(f"https://yoomoney.ru/oauth/authorize?client_id={environ.get('YOOMONEY_CLIENT_ID')}&response_type=code&redirect_uri=https://core.timka.space/yoomoney/callback/&scope=payment+account-info+operation-history operation-details payment-shop payment-p2p money-source")
 
 
 def callback(request: HttpRequest, code: str):
