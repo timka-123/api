@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('license/', include('checker.urls'), name="checker")
+    path('license/', include('checker.urls'), name="checker"),
+    path('yoomoney/', include('yoomoney_token.urls'), name='yoomoney')
 ]

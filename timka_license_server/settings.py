@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'checker.apps.CheckerConfig',
+    'yoomoney_token.apps.YoomoneyTokenConfig'
 ]
 
 MIDDLEWARE = [
