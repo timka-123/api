@@ -30,9 +30,9 @@ pip install -U -r requiremets.txt
 ```
 TELEGRAM_TOKEN=токен Telegram бота для уведомлений
 DJANGO_SECRET_KEY=секретный ключ Django (рандомные символы)
-DB_USER=имя пользователя базы данных
-DB_PASSWORD=пароль от пользователя базы данных
-DB_NAME=название базы данных
+DB_USER=имя пользователя базы данных PostgreSQL
+DB_PASSWORD=пароль от пользователя базы данных PostgreSQL
+DB_NAME=название базы данных PostgreSQL
 YOOMONEY_CLIENT_ID=client ID приложения YooMoney
 ```
 
